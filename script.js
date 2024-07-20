@@ -1,9 +1,11 @@
-const colorSelect = document.getElementById('colorSelect');
-const removeColorButton = document.getElementById('removeColorButton');
+window.onload = function() {
+    const colorSelect = document.getElementById('colorSelect');
+    const removeColorButton = document.getElementById('removeColorButton');
 
-removeColorButton.addEventListener('click', () => {
+    removeColorButton.addEventListener('click', () => {
   
-  const selectedOption = colorSelect.options[colorSelect.selectedIndex];
+        const selectedOption = colorSelect.options[colorSelect.selectedIndex];
   
-  colorSelect.removeChild(selectedOption);
-});
+        colorSelect.removeChild(selectedOption);
+    });
+}
