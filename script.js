@@ -1,11 +1,13 @@
-window.onload = function() {
-    const colorSelect = document.getElementById('colorSelect');
-    const removeColorButton = document.getElementById('removeColorButton');
+//your JS code here. If required.
+// Get references to the select element and the remove button
+const colorSelect = document.getElementById('colorSelect');
+const removeColorButton = document.getElementById('removeColorButton');
 
-    removeColorButton.addEventListener('click', () => {
+// Add a click event listener to the remove button
+removeColorButton.addEventListener('click', () => {
+  // Get the selected option from the select element
+  const selectedOption = colorSelect.options[colorSelect.selectedIndex];
   
-        const selectedOption = colorSelect.options[colorSelect.selectedIndex];
-  
-        colorSelect.removeChild(selectedOption);
-    });
-}
+  // Remove the selected option from the select element
+  colorSelect.removeChild(selectedOption);
+});
