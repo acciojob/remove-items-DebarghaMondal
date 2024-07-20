@@ -1,4 +1,9 @@
-function removeoption(){
-    let select = document.getElementById("colorSelect");
-    select.remove(select.selectedIndex);
-}
+const colorSelect = document.getElementById('colorSelect');
+const removeColorButton = document.getElementById('removeColorButton');
+
+removeColorButton.addEventListener('click', () => {
+  
+  const selectedOption = colorSelect.options[colorSelect.selectedIndex];
+  
+  colorSelect.removeChild(selectedOption);
+});
